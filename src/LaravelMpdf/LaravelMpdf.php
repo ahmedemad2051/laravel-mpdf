@@ -38,6 +38,7 @@ class LaravelMpdf {
 			'margin_bottom' => $this->getConfig('margin_bottom'),
 			'margin_header' => $this->getConfig('margin_header'),
 			'margin_footer' => $this->getConfig('margin_footer'),
+            'tempDir' => $this->getConfig('tempDir'),
 			'fontDir' => array_merge($fontDirs, [
 				$this->getConfig('custom_font_dir')
 			]),
