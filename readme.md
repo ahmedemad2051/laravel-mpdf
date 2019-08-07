@@ -93,6 +93,7 @@ To override this configuration on a per-file basis use the fourth parameter of t
 ```
 PDF::loadView('pdf', $data, [], [
   'title' => 'Another Title',
+  'tempDir'=>__DIR__.'/path/to/new/temp',
   'margin_top' => 0
 ])->save($pdfFilePath);
 ```
